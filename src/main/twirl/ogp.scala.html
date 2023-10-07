@@ -1,0 +1,19 @@
+@(title: String)
+<!DOCTYPE html>
+<html lang="ja_JP">
+    <head>
+        <meta charset="utf-8">
+        <style>
+         @@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@@700&display=swap');
+         body { margin: 0; width: 1200px; height: 630px; }
+         img { margin: 0; }
+         #bg { width: 1200px; height: 630px; }
+         #title { position: absolute; top: 100px; left: 100px; max-width: 1000px; font-family: 'BIZ UDPGothic', sans-serif;font-size: 48px; }
+        </style>
+    </head>
+    <body>
+        <script src="https://unpkg.com/budoux/bundle/budoux-ja.min.js"></script>
+        <img id="bg" src="/ogp.svg" alt="background" />
+        <div id="title"><budoux-ja>@title</budoux-ja></div>
+    </body>
+</html>
