@@ -6,6 +6,7 @@ val MunitCatsEffectVersion = "1.0.7"
 
 lazy val root = (project in file("."))
   .enablePlugins(SbtTwirl)
+  .enablePlugins(PackPlugin)
   .settings(
     organization := "io.github.windymelt",
     name := "ogimagekun",
