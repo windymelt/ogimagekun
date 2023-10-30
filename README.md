@@ -1,6 +1,8 @@
 # ogimagekun
 OG:Image generator
 
+![screenshot](/ogimagekun.webp)
+
 ## build HTML renderer
 
 ```sh
