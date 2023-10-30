@@ -1,6 +1,12 @@
 name = "worker"
-main = "src/index.js"
+main = "src/worker.js"
 compatibility_date = "2023-10-02"
+compatibility_flags = [ "nodejs_compat" ]
+
+browser = { binding = "MYBROWSER" }
+kv_namespaces = [
+  { binding = "OGI_WORKER", id = "d2510be5376a453d879a81c51014f0f4", preview_id = "81ef9b798b45410cb66048d698dc6504" }
+]
 
 # Variable bindings. These are arbitrary, plaintext strings (similar to environment variables)
 # Note: Use secrets to store sensitive data.
