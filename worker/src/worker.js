@@ -12,7 +12,7 @@ export default {
 				const browser = await puppeteer.launch(env.MYBROWSER);
 				const page = await browser.newPage();
 				await page.goto(url);
-			    img = await page.screenshot({ type: 'webp', clip: { height: 630, width: 1200, x: 0, y: 0 } });
+			    img = await page.screenshot({ type: 'webp', clip: { height: 630, width: 1200, x: 0, y: 0 }, quality: 95 });
 				await env.OGI_WORKER.put(url, img, {
 					expirationTtl: 60 * 60 * 24,
 				});
